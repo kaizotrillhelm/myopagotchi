@@ -1,0 +1,95 @@
+<style>    
+    
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    background: #c1caca;
+    color: rgb(0, 0, 0);
+    width: 60px;
+    height: 40px;
+    line-height: 120px;
+    border-radius: 50%;
+    text-align: center;
+    font-weight: bold;
+    vertical-align: middle;
+    overflow: hidden;
+    box-shadow: 0px 2px 2px rgb(48, 47, 47);
+    border-bottom: solid 3px #99abac;
+    transition: .4s;
+}
+
+.btn:active{
+    -ms-transform: translateY(2px);
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px);
+    box-shadow: 0 0 1px rgb(0, 0, 0);
+    border-bottom: none;
+}
+
+.bg1 { grid-area: bg1; }
+.bg2 { grid-area: bg2; }
+.bg3 { grid-area: bg3; }
+.scr { grid-area: scr; }
+.top { grid-area: top; }
+.mid { grid-area: mid; }
+.bot { grid-area: bot; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+
+    'bg2 bg2 bg2 bg2 scr scr scr scr scr scr'
+
+    'bg3 bg3 bg3 bg3 top top mid mid bot bot'
+    'bg3 bg3 bg3 bg3 top top mid mid bot bot';
+  align-items: stretch;
+  justify-content: center;
+ 
+  width: 600px;
+  height: 600px;
+    
+    background-color: #transparent;
+    
+  background-image: url("gatchibackground.png"); 
+    width: 800px;
+    height: 800px;
+    
+        
+}
+
+.grid-container > div {
+  background-color: #transparent;
+}
+
+     
+</style>
+
+<script src="MyopaGotchi.js"></script>
+
+<div class="grid-container">
+    
+    <div class="bg1"></div>
+    <div class="bg2"></div>
+    <div class="bg3"></div>  
+    <div class="scr">
+        <canvas id="canv" width="600" height="600"></canvas>
+        <img id="bg" src="tamawashi_background.png" alt="background" hidden/>
+        <img id="sel" src="tamawashi_select.png" alt="select" hidden/>
+    </div>
+    <div class="top">
+        <a href="#" class="btn" onmousedown="buttonSelect(49)"
+                                onmouseup="buttonRelease(49)"
+                                onmouseleave="buttonRelease(49)"></a>
+    </div>
+    <div class="mid">
+        <a href="#" class="btn" onmousedown="buttonSelect(50)"
+                                onmouseup="buttonRelease(50)"
+                                onmouseleave="buttonRelease(50)"></a>
+    </div>
+    <div class="bot">
+        <a href="#" class="btn" onmousedown="buttonSelect(51)" 
+                                onmouseup="buttonRelease(51)"
+                                onmouseleave="buttonRelease(51)"></a>
+    </div>
+</div>
+

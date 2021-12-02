@@ -1,0 +1,6 @@
+--2021-11-30 10:39:03--  https://media.discordapp.net/attachments/908415229837324288/910538915574861834/tama_bg.png?width=981
+Resolving media.discordapp.net (media.discordapp.net)... 162.159.130.232, 162.159.129.232, 162.159.133.232, ...
+Connecting to media.discordapp.net (media.discordapp.net)|162.159.130.232|:443... connected.
+HTTP request sent, awaiting response... 400 Bad Request
+2021-11-30 10:39:05 ERROR 400: Bad Request.
+
